@@ -1,0 +1,56 @@
+class Ideone
+{
+     public static void main(String []args){
+     
+     //given string
+         
+         int[] numbers = {23, 45,800, 600,900,10000, 3,1200,2,1500, 2000, 1, 45,20000,30000};
+         // variables to store the min and max numbers
+         int minNumber;
+         int maxNumber;
+         int len = numbers.length;
+           System.out.println(len);
+         int i;
+         // the first number of the string is assigned as a min and mix numbers
+            maxNumber = numbers[0];
+            minNumber = numbers[0];
+         
+         // checking if the number assigned to the maxNumber is less or greater than the numbers[i]
+         
+         for(i=0; i<len;i++){
+             
+             if(numbers[i]> maxNumber){
+             // if numbers[i] is more than the initial maxNumber than the maxNumber, then the maxNumber is updated
+                 
+                 maxNumber = numbers[i];
+                 // printing to see how the maxNumber is updated in each iteration
+                 
+                 System.out.println(maxNumber);
+                
+                 
+             }
+         }
+         for(i=0; i<len;i++){
+             
+             if(numbers[i]< minNumber){
+                 
+                 minNumber = numbers[i];
+                 
+                 System.out.println(minNumber);
+                
+                 
+             }
+         }
+             
+            
+             // printing the max and min numbers
+      
+          System.out.println("The max number is " + maxNumber);
+          System.out.println("The min number is " + minNumber);
+          
+        
+         
+         
+        
+     }
+}
